@@ -8,6 +8,8 @@ section{
 }
   h1{
     float: right;
+    margin-top: 20px;
+    font-weight: bold;
   }
 .a11{
   color: brown;
@@ -16,21 +18,17 @@ section{
     list-style-type: none;
     display: flex;
     float: right;
+    font-size: 19px;
   }
   .nav-link {
     margin-right: 90px;
     padding: 10px;
-    
     font-weight: bold;
   }
  
   a {
     text-decoration: none;
     color: black;
-  }
-  
-  a.active {
-    color: rgb(85, 77, 77);
   }
   img{
     padding: 10px;
