@@ -1,1 +1,48 @@
-<p>contact works!</p>
+<div class="container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="requestForm">
+
+      <div>
+        <mat-label>Name</mat-label><br>
+        <input type="text" placeholder="Name..." formControlName="name" />
+        <mat-error class="error-msg" *ngIf="nameInput.invalid && nameInput.touched">
+          <br>Name is required.
+        </mat-error>
+      </div><br>
+
+      <div>
+        <mat-label>Occupation</mat-label><br>
+        <input type="text" placeholder="Occupation..." formControlName="occupation" />
+      </div><br>
+
+      <div>
+        <mat-label>Email</mat-label><br>
+        <input type="text" placeholder="Email..." formControlName="email" />
+        <mat-error class="error-msg" *ngIf="emailInput.invalid && emailInput.touched">
+          <br>Email is required. And must be correct. <br>
+        </mat-error>
+      </div><br>
+
+      <div>
+        <mat-label>Subject</mat-label><br>
+        <input type="text" placeholder="Subject..." formControlName="subject" />
+        <mat-error class="error-msg"  *ngIf="subjectInput.invalid && subjectInput.touched">
+          <br>Subject is required. <br>
+        </mat-error>
+      </div><br>
+
+      <div>
+        <mat-label>Content</mat-label><br>
+        <textarea matInput formControlName="content"></textarea>
+        <mat-error class="error-msg" *ngIf="contentInput.invalid && contentInput.touched">
+          <br>Content is required. And must be between 10 and 255 characters. <br>
+        </mat-error>
+      </div><br>
+
+      <button
+        type="submit"
+        [disabled]="requestForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>

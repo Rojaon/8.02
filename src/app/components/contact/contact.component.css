@@ -1,0 +1,17 @@
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(150, 148, 147);
+    height: 600px;
+    width: 400px;
+    text-align: center;
+}
+input{
+    margin-bottom: 10px;
+}
+mat-label{
+    color: azure;
+    font-weight: bold;
+}
