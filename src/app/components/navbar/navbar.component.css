@@ -1,0 +1,38 @@
+
+nav{
+    background: rgb(246, 238, 238);
+    width:100%;
+}
+section{
+    float: left;
+}
+  h1{
+    float: right;
+  }
+.a11{
+  color: brown;
+}
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    float: right;
+  }
+  .nav-link {
+    margin-right: 90px;
+    padding: 10px;
+    
+    font-weight: bold;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a.active {
+    color: rgb(85, 77, 77);
+  }
+  img{
+    padding: 10px;
+    margin-left: 10px;
+  }
